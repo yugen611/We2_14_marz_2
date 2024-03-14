@@ -1,0 +1,71 @@
+*{
+    background-color: blanchedalmond;
+}
+
+/* USANDO GETBOOTSTRAP*/
+.padre{
+    background-color: aqua;
+    /* display: flex;   lo vuelve flexible*/
+    display: grid;/* lo vuelve con mas propiedaedes q */
+     /*  grid-template-columns: auto auto auto auto ;     /* elegimos usar este que se usa siempre en el padre qu el n auto que dice */
+                                     /*  cuantas n columnas      */
+    grid-template-columns: 50%  20% auto auto; /* simpre el primero usara el 50% del dispositivo el segundo 20%*/
+    grid-template-rows: 250px 100px auto;/* elegimos usar este que se usa siempre en el padre qu el n auto que dice */
+    /*  cuantas n filas recomendado usar px     */
+     /* justify-content: flex-center;  /*  justifica en don querrra mos inicio fin center etc   */
+     justify-content: space-between;     /*  apega celdas a  los bordes   */
+    /* align-items: center;       hace repetar     si no ocupa lo que se dijo lo deja en blanco*/
+}
+
+
+.hijo{
+    background-color: cadetblue;
+    /*width: 150px;
+    height: 150px;*/
+    border-style: solid;
+    border-color: black;
+    font-size: 50px;
+    /*display: inline-block;   el tamño es estatico*/
+}
+.hijo1{
+    background-color: chocolate;
+    /*width: 150px;
+    height: 150px;*/
+    border-style: solid;
+    border-color: black;
+    font-size: 50px;
+    grid-column: 1/5;   /*dem la linea 1 a la linea final de la fila*/
+    /*display: inline-block;   el tamño es estatico*/
+}
+.hijo2{
+    background-color: darkseagreen;
+    /*width: 150px;
+    height: 150px;*/
+    border-style: solid;
+    border-color: black;
+    font-size: 50px;
+    grid-column: 1/4;   /*dem la linea 1 a la linea final de la fila*/
+    /*display: inline-block;   el tamño es estatico*/
+}
+.hijo3{
+    background-color: goldenrod;
+    /*width: 150px;
+    height: 150px;*/
+    border-style: solid;
+    border-color: black;
+    font-size: 50px;
+
+    
+    /*display: inline-block;   el tamño es estatico*/
+}
+.hijo4{
+    background-color: goldenrod;
+    /*width: 150px;
+    height: 150px;*/
+    border-style: solid;
+    border-color: black;
+    font-size: 50px;
+    grid-row: 3/5; /*dem la linea 1 a la linea final de la columna*/
+    
+    /*display: inline-block;   el tamño es estatico*/
+}
